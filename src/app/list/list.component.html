@@ -1,0 +1,9 @@
+<h2>LISTA</h2>
+  <ul>
+    <li *ngFor = "let hero of heroes">
+      {{hero.name}} has colour {{hero.color}}
+      <ol>
+        <li *ngFor = "let power of hero.superpowers">{{power}}</li>
+      </ol>
+    </li>
+  </ul>

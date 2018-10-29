@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlComponent implements OnInit {
 
-  value : number = 0;
-  constructor() { }
+  value : number;
+  constructor() {
+    this.value = 0;
+  }
 
   ngOnInit() {
   }
