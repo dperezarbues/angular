@@ -4,3 +4,7 @@ Enter a superhero name: <input  [(ngModel)] = name>
 <h3>{{name}}</h3>
 
 <!--PONER AQUI UN SWITCH-->
+<div [ngSwitch] = name>
+    <img *ngSwitchCase="'wolverine'" src={{wolverine}}/>
+    <img *ngSwitchCase="'batman'" src={{batman}}/>
+</div>
